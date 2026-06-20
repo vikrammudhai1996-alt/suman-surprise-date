@@ -1,1 +1,138 @@
-<h1>Hello Suman ❤️</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Suman ❤️</title>
+<style>
+body{
+font-family:Arial;
+background:#ffe6eb;
+text-align:center;
+padding:20px;
+}
+
+h1{
+color:#d6336c;
+}
+
+img{
+width:280px;
+border-radius:20px;
+margin:10px;
+box-shadow:0 0 10px gray;
+}
+
+button{
+padding:15px 25px;
+font-size:18px;
+border:none;
+border-radius:10px;
+background:#d6336c;
+color:white;
+margin:10px;
+}
+
+#second,#third,#final{
+display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div id="first">
+
+<h1>Dear Suman ❤️</h1>
+
+<p>
+From just you and me,<br><br>
+to our beautiful family with Virat and Samraat ❤️
+</p>
+
+<img src="20260413_140615.jpg"><br>
+
+<button onclick="showSecond()">Continue ❤️</button>
+
+</div>
+
+<div id="second">
+
+<h1>Our Beautiful Journey ❤️</h1>
+
+<img src="IMG-20260314-WA0005.jpg">
+<img src="Snapchat-525213957.jpg">
+
+<p>
+Every day with you feels special.
+Thank you for being my best friend,
+my strength and the most beautiful part of my life.
+❤️
+</p>
+
+<button onclick="showThird()">One Question ❤️</button>
+
+</div>
+
+<div id="third">
+
+<h1>Suman ❤️</h1>
+
+<h2>Will you go on a Surprise Date with me? 😘</h2>
+
+<input type="date" id="date"><br><br>
+
+<label>
+<input type="checkbox"> Movie 🍿
+</label><br>
+
+<label>
+<input type="checkbox"> Candle Light Dinner 🕯️
+</label><br>
+
+<label>
+<input type="checkbox"> Long Drive 🚗
+</label><br>
+
+<label>
+<input type="checkbox"> Surprise Night 🌙
+</label><br><br>
+
+<button onclick="confirmDate()">YES ❤️</button>
+
+</div>
+
+<div id="final">
+
+<h1>Date Confirmed ❤️</h1>
+
+<h2>I Love You Mrs. Suman Singh ❤️</h2>
+
+<p>
+Now get ready...
+because your husband has planned something special. 😘
+</p>
+
+<h1>❤️❤️❤️</h1>
+
+</div>
+
+<script>
+
+function showSecond(){
+document.getElementById("first").style.display="none";
+document.getElementById("second").style.display="block";
+}
+
+function showThird(){
+document.getElementById("second").style.display="none";
+document.getElementById("third").style.display="block";
+}
+
+function confirmDate(){
+document.getElementById("third").style.display="none";
+document.getElementById("final").style.display="block";
+}
+
+</script>
+
+</body>
+</html>
